@@ -1,0 +1,24 @@
+root = true
+
+[*.cs]
+# return new T() -> return new()
+resharper_object_creation_when_type_not_evident = target_typed
+resharper_csharp_object_creation_when_type_not_evident = target_typed
+
+# new T() -> new()
+resharper_csharp_object_creation_when_type_evident = target_typed
+resharper_object_creation_when_type_evident = target_typed
+
+# var result -> T result
+csharp_style_var_elsewhere = false:error
+csharp_style_var_for_built_in_types = false:error
+csharp_style_var_when_type_is_apparent = false:error
+
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:error
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:error
+dotnet_style_parentheses_in_other_operators = always_for_clarity:error
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:error
+
+dotnet_style_namespace_match_folder	= true
+
+csharp_style_namespace_declarations	= file_scoped
